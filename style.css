@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;900&display=swap');
+
+/* General */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Texts */
+
+.containerTexts{
+    background-color: #201B2D;
+    font-family: "Spartan";
+    height: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.containerTexts > *{
+    margin-left: 5%;
+}
+
+.ref{
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: .9rem;
+}
+
+.title{
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+.text{
+    width: 90%;
+    border-left: solid 8px #ffffff;
+}
+
+.text > *{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0 0 0 5%;
+}
+
+.author{
+    color: #C2C7DA;
+    font-size: 1rem;
+}
+
+.credits > *{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: .6rem;
+    /* margin: 0; */
+}
+
+#nasa{
+    color: #C2C7DA; 
+}
+
+
+
+
+/* Image */
+
+.containerImg{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+img{
+    height: auto;
+    width: 100%;
+}
+
+
+
+/* Media queries */
+
+@media screen and (min-width: 768px){
+    main{
+        flex-direction: row;
+    }
+    .containerTexts{
+        width: 40%;
+        height: 100%;
+    }
+    .containerTexts > *{
+        margin-left: 3%;
+    }
+    .ref{
+        font-size: 1.1rem;
+    }
+    
+    .title{
+        font-size: 2.3rem;
+    }
+    
+    .text > *{
+        font-size: 1rem;
+    }
+    
+    .author{
+        color: #C2C7DA;
+        font-size: 1rem;
+    }
+    
+    .credits > *{
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: .6rem;
+        /* margin: 0; */
+    }
+    .containerImg{
+        width: 60%;
+        height: 100%;
+    }
+    img{
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
